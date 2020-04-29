@@ -19,7 +19,7 @@ public class InsertTest {
     @Test
     public void Insert() {
         User user = new User();
-        user.setName("适时");
+        user.setName("适1时");
         user.setAge(26);
         user.setManagerId(1088248166370832385l);
         user.setCreateTime(LocalDateTime.now());
