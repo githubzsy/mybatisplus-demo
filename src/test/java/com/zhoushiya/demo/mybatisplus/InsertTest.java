@@ -19,11 +19,10 @@ public class InsertTest {
     @Test
     public void Insert() {
         User user = new User();
-        user.setRealName("七七");
+        user.setName("七七");
         user.setAge(26);
         user.setManagerId(1088248166370832385l);
         user.setCreateTime(LocalDateTime.now());
-        user.setRemark("这是一条备注");
         int rows = userMapper.insert(user);
         System.out.println(rows);
     }

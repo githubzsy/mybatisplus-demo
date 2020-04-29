@@ -13,3 +13,7 @@ logging:
     com.zhoushiya.demo: trace
   pattern:
     console: '自定义日志:%p%m%n'
+
+#mybatis-plus:
+#  mapper-locations:
+#    - mapper/*

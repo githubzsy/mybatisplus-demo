@@ -1,5 +1,6 @@
 package com.zhoushiya.demo.entity;
 
+import com.baomidou.mybatisplus.annotation.SqlCondition;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -8,14 +9,13 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("mp_user")
 public class User {
 
     @TableId
-    private Long userId;
+    private Long id;
 
-    @TableField("name")
-    private String realName;
+    @TableField(condition = SqlCondition.LIKE)
+    private String name;
 
     private Integer age;
 
@@ -24,10 +24,4 @@ public class User {
     private Long managerId;
 
     private LocalDateTime createTime;
-
-    /**
-     * 备注，数据库没有对应字段
-     */
-    @TableField(exist = false)
-    private String remark;
 }
