@@ -1,8 +1,8 @@
-package com.zhoushiya.demo.mybatisplus;
+package com.zhoushiya.demo.mybatisplus.user;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.zhoushiya.demo.entity.User;
-import com.zhoushiya.demo.service.UserService;
+import com.zhoushiya.demo.generator.biz.entity.User;
+import com.zhoushiya.demo.generator.biz.service.IUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +16,7 @@ import java.util.List;
 @SpringBootTest
 public class ServiceTest {
     @Resource
-    private UserService userService;
+    private IUserService userService;
 
     @Test
     public void getOne() {

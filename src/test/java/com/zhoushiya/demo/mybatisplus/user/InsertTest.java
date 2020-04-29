@@ -1,7 +1,7 @@
-package com.zhoushiya.demo.mybatisplus;
+package com.zhoushiya.demo.mybatisplus.user;
 
-import com.zhoushiya.demo.dao.UserMapper;
-import com.zhoushiya.demo.entity.User;
+import com.zhoushiya.demo.generator.biz.mapper.UserMapper;
+import com.zhoushiya.demo.generator.biz.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
