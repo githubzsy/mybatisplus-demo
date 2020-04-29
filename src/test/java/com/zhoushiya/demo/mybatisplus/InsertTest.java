@@ -19,11 +19,12 @@ public class InsertTest {
     @Test
     public void Insert() {
         User user = new User();
-        user.setName("七七");
+        user.setName("适时");
         user.setAge(26);
         user.setManagerId(1088248166370832385l);
         user.setCreateTime(LocalDateTime.now());
         int rows = userMapper.insert(user);
-        System.out.println(rows);
+        System.out.println("影响记录数:"+rows);
+        System.out.println("主键:"+user.getId());
     }
 }

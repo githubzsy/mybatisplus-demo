@@ -23,7 +23,7 @@ public class UpdateTest {
     @Test
     public void UpdateById() {
         User user = new User();
-        user.setId(1088248166370832385l);
+        user.setId("1088248166370832385");
         user.setAge(27);
         // 设置为null的字段不会更新
         user.setEmail(null);

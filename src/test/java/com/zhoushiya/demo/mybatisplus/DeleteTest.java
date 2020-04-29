@@ -23,7 +23,7 @@ public class DeleteTest {
 
     @Test
     public void DeleteById() {
-        int rows = userMapper.deleteById(1254654283014975490l);
+        int rows = userMapper.deleteById("1254654283014975490");
         Assert.assertEquals(1, rows);
     }
 
@@ -44,7 +44,7 @@ public class DeleteTest {
      */
     @Test
     public void DeleteBatchIds() {
-        int rows = userMapper.deleteBatchIds(Arrays.asList(1254653624966434818l, 1254652491254452226l));
+        int rows = userMapper.deleteBatchIds(Arrays.asList("1254653624966434818"," 1254652491254452226"));
         Assert.assertEquals(2, rows);
     }
 

@@ -1,20 +1,18 @@
 package com.zhoushiya.demo.entity;
 
-import com.baomidou.mybatisplus.annotation.SqlCondition;
-import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
-public class User {
+public class User extends Model<User> {
 
-    @TableId
-    private Long id;
+    private String id;
 
-    @TableField(condition = SqlCondition.LIKE)
+    // @TableField(condition = SqlCondition.LIKE)
     private String name;
 
     private Integer age;
